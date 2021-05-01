@@ -1,0 +1,7 @@
+.toast-container{
+    display:flex;
+    
+}
+.toast-child{
+    justify-content: end;
+}
