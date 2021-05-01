@@ -1,17 +1,18 @@
-import {Toast} from "./component/Toast"
-import './App.css';
+import React from "react";
+import { Toast } from "./component/Toast";
+import "./App.css";
 import { useState } from "react";
 
 function App() {
-  const [showToast,setShowToast]=useState(false);
-  const handleToast =()=>{
-    setShowToast(true)
-  }
+  const [showToast, setShowToast] = useState(false);
+  const handleToast = () => {
+    setShowToast(true);
+  };
   return (
     <>
-    <h1>Hello </h1>
-    <button onClick={handleToast}>Show Toast</button>    
-    { showToast && <Toast />}
+      <h1>Hello </h1>
+      <button onClick={handleToast}>Show Toast</button>
+      {showToast && <Toast type="info" />}
     </>
   );
 }

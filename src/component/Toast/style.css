@@ -1,7 +1,30 @@
-.toast-container{
-    display:flex;
-    
+.toast-container {
+  position: fixed;
+  border: 1px #333 solid;
+  height: 55px;
+  width: 270px;
+  display: flex;
+  bottom: 15px;
+  right: 15px;
+  justify-content: space-between;
+  padding: 0px 10px;
+  align-items: center;
+  transition: transform 0.6s ease-in-out;
+  animation: toast-in-right 0.7s;
+  overflow: hidden;
 }
-.toast-child{
-    justify-content: end;
+@keyframes toast-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.toast-child {
+}
+.info {
+  background-color: aquamarine;
+  border-color: rgb(9, 211, 218);
+  color: #333;
 }
